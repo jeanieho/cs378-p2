@@ -7,22 +7,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Hint: You can use the image name to get the image from the images folder.
 const MenuItem = ({ title, description, imageName, price }) => {
     return (
-        // {/* <h2>{title}</h2> */}
         <div className="container">
             <div className="row">
                 <div className="col-4">
                     <img 
-                        src={require(`../images/${imageName}`)} alt={title} className="rounded" style={{ width: "110%" }}
+                        src={require(`../images/${imageName}`)} 
+                        alt={title} 
+                        className="rounded-3" 
+                        style={{ width: "110%" }}
                     />
                 </div>
                 <div className="col-8">
                     <div className="card-body">
                         <h5 className="card-title">{title}</h5>
                         <p className="card-text">{description}</p>
-                        <p className="card-text">Price: ${price}</p>
                     </div>
-                    <div className="button">
-                        <button className="rounded">Add</button>
+                    <div className="card-footer d-flex justify-content-between align-items-center">
+                        <p className="card-text-price">Price: ${price}</p>
+                        <button className="rounded-3">
+                            Add
+                        </button>
                     </div>
                 </div>
             </div>
