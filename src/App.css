@@ -35,11 +35,11 @@
   padding: 3%;
 }
 
-.button {
+/* .button {
   display: flex;
   flex-direction: row-reverse;
   padding-bottom: 30px;
-}
+} */
 
 .card-text {
   padding-top: 2%;
